@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+A flash ADC that has its threshold voltages built into inverters, elimating the need for an external reference
 
 ## How to test
 
-Explain how to use your project
+Apply a signal 0V-1.8V to set the output digital voltage
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Multimeter to measure digital outputs
