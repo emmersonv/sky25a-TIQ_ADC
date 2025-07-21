@@ -1,0 +1,17 @@
+* NGSPICE file created from inverter_p2_n7.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_UCB5V5 a_15_n200# a_n15_n226# a_n73_n200# w_n109_n262#
+X0 a_15_n200# a_n15_n226# a_n73_n200# w_n109_n262# sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_R8AVTM a_n125_n350# a_63_n350# a_n63_n376# a_n33_n350#
++ VSUBS
+X0 a_n33_n350# a_n63_n376# a_n125_n350# VSUBS sky130_fd_pr__nfet_01v8 ad=0.5775 pd=3.83 as=1.085 ps=7.62 w=3.5 l=0.15
+X1 a_63_n350# a_n63_n376# a_n33_n350# VSUBS sky130_fd_pr__nfet_01v8 ad=1.085 pd=7.62 as=0.5775 ps=3.83 w=3.5 l=0.15
+.ends
+
+.subckt inverter_p2_n7 VDPWR Vout Vin VGND
+Xsky130_fd_pr__pfet_01v8_UCB5V5_0 Vout Vin VDPWR VDPWR sky130_fd_pr__pfet_01v8_UCB5V5
+Xsky130_fd_pr__nfet_01v8_R8AVTM_0 VGND VGND Vin Vout VGND sky130_fd_pr__nfet_01v8_R8AVTM
+.ends
+

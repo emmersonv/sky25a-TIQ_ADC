@@ -1,0 +1,102 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1752982802
+<< nwell >>
+rect -36 1356 590 1908
+<< psubdiff >>
+rect -36 2 590 34
+rect -36 -134 28 2
+rect 526 -134 590 2
+rect -36 -166 590 -134
+<< nsubdiff >>
+rect 0 1840 554 1872
+rect 0 1704 28 1840
+rect 526 1704 554 1840
+rect 0 1672 554 1704
+<< psubdiffcont >>
+rect 28 -134 526 2
+<< nsubdiffcont >>
+rect 28 1704 526 1840
+<< poly >>
+rect -36 1378 30 1394
+rect -36 1342 -20 1378
+rect 14 1356 30 1378
+rect 218 1356 248 1392
+rect 14 1344 492 1356
+rect 14 1342 92 1344
+rect -36 1326 92 1342
+rect 62 1314 92 1326
+rect 188 1314 366 1344
+<< polycont >>
+rect -20 1342 14 1378
+<< locali >>
+rect 12 1840 542 1856
+rect 12 1704 28 1840
+rect 526 1704 542 1840
+rect 12 1688 542 1704
+rect 172 1622 206 1688
+rect -36 1378 30 1394
+rect -36 1342 -20 1378
+rect 14 1342 30 1378
+rect 260 1366 294 1414
+rect 524 1378 590 1394
+rect 524 1366 540 1378
+rect -36 1326 30 1342
+rect 108 1342 540 1366
+rect 574 1342 590 1378
+rect 108 1326 590 1342
+rect 108 1276 142 1326
+rect 412 1276 446 1326
+rect 12 18 46 96
+rect 204 18 238 96
+rect 316 18 350 96
+rect 508 18 542 96
+rect 12 2 542 18
+rect 12 -134 28 2
+rect 526 -134 542 2
+rect 12 -150 542 -134
+<< viali >>
+rect 28 1704 526 1840
+rect -20 1342 14 1378
+rect 540 1342 574 1378
+rect 28 -134 526 2
+<< metal1 >>
+rect -36 1840 590 1856
+rect -36 1704 28 1840
+rect 526 1704 590 1840
+rect -36 1688 590 1704
+rect -36 1378 30 1394
+rect -36 1342 -20 1378
+rect 14 1342 30 1378
+rect -36 1326 30 1342
+rect 524 1378 590 1394
+rect 524 1342 540 1378
+rect 574 1342 590 1378
+rect 524 1326 590 1342
+rect -36 2 590 18
+rect -36 -134 28 2
+rect 526 -134 590 2
+rect -36 -150 590 -134
+use sky130_fd_pr__nfet_01v8_PCULBC  sky130_fd_pr__nfet_01v8_PCULBC_0
+timestamp 1752980544
+transform 1 0 125 0 1 688
+box -125 -626 125 656
+use sky130_fd_pr__nfet_01v8_PCULBC  sky130_fd_pr__nfet_01v8_PCULBC_1
+timestamp 1752980544
+transform 1 0 429 0 1 688
+box -125 -626 125 656
+use sky130_fd_pr__pfet_01v8_TH65V5  sky130_fd_pr__pfet_01v8_TH65V5_0
+timestamp 1752980544
+transform 1 0 233 0 1 1518
+box -109 -162 109 162
+<< labels >>
+rlabel metal1 234 1818 268 1856 1 VDPWR
+port 1 n
+rlabel metal1 574 1342 590 1358 3 Vout
+port 2 e
+rlabel metal1 -36 1344 -20 1360 7 Vin
+port 3 w
+rlabel metal1 238 -150 254 -134 5 VGND
+port 4 s
+<< end >>

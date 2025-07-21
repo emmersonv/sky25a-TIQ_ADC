@@ -1,0 +1,18 @@
+* NGSPICE file created from inverter_p1_n24.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_PCULBC a_n33_n600# a_n125_n600# a_63_n600# a_n63_n626#
++ VSUBS
+X0 a_63_n600# a_n63_n626# a_n33_n600# VSUBS sky130_fd_pr__nfet_01v8 ad=1.86 pd=12.62 as=0.99 ps=6.33 w=6 l=0.15
+X1 a_n33_n600# a_n63_n626# a_n125_n600# VSUBS sky130_fd_pr__nfet_01v8 ad=0.99 pd=6.33 as=1.86 ps=12.62 w=6 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_TH65V5 a_n73_n100# w_n109_n162# a_15_n100# a_n15_n126#
+X0 a_15_n100# a_n15_n126# a_n73_n100# w_n109_n162# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt inverter_p1_n24 VDPWR Vout Vin VGND
+Xsky130_fd_pr__nfet_01v8_PCULBC_0 Vout VGND VGND Vin VGND sky130_fd_pr__nfet_01v8_PCULBC
+Xsky130_fd_pr__nfet_01v8_PCULBC_1 Vout VGND VGND Vin VGND sky130_fd_pr__nfet_01v8_PCULBC
+Xsky130_fd_pr__pfet_01v8_TH65V5_0 VDPWR VDPWR Vout Vin sky130_fd_pr__pfet_01v8_TH65V5
+.ends
+

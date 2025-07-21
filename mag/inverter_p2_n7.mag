@@ -1,0 +1,93 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1753039804
+<< nwell >>
+rect -36 856 288 1608
+<< psubdiff >>
+rect -36 2 288 34
+rect -36 -134 28 2
+rect 224 -134 288 2
+rect -36 -166 288 -134
+<< nsubdiff >>
+rect 0 1540 252 1572
+rect 0 1404 28 1540
+rect 224 1404 252 1540
+rect 0 1372 252 1404
+<< psubdiffcont >>
+rect 28 -134 224 2
+<< nsubdiffcont >>
+rect 28 1404 224 1540
+<< poly >>
+rect -36 876 30 892
+rect -36 842 -20 876
+rect 14 856 30 876
+rect 110 856 140 892
+rect 14 842 188 856
+rect -36 826 188 842
+<< polycont >>
+rect -20 842 14 876
+<< locali >>
+rect 12 1540 240 1556
+rect 12 1404 28 1540
+rect 224 1404 240 1540
+rect 12 1388 240 1404
+rect 64 1322 98 1388
+rect -36 876 30 892
+rect -36 842 -20 876
+rect 14 842 30 876
+rect 152 866 186 914
+rect 222 876 288 892
+rect 222 866 238 876
+rect -36 826 30 842
+rect 108 842 238 866
+rect 272 842 288 876
+rect 108 826 288 842
+rect 108 792 142 826
+rect 12 776 46 792
+rect 12 18 46 84
+rect 204 18 238 84
+rect 12 2 240 18
+rect 12 -134 28 2
+rect 224 -134 240 2
+rect 12 -150 240 -134
+<< viali >>
+rect 28 1404 224 1540
+rect -20 842 14 876
+rect 238 842 272 876
+rect 28 -134 224 2
+<< metal1 >>
+rect -36 1540 288 1556
+rect -36 1404 28 1540
+rect 224 1404 288 1540
+rect -36 1388 288 1404
+rect -36 876 30 892
+rect -36 842 -20 876
+rect 14 842 30 876
+rect -36 826 30 842
+rect 222 876 288 892
+rect 222 842 238 876
+rect 272 842 288 876
+rect 222 826 288 842
+rect -36 2 288 18
+rect -36 -134 28 2
+rect 224 -134 288 2
+rect -36 -150 288 -134
+use sky130_fd_pr__nfet_01v8_R8AVTM  sky130_fd_pr__nfet_01v8_R8AVTM_0
+timestamp 1753036307
+transform 1 0 125 0 1 438
+box -125 -376 125 406
+use sky130_fd_pr__pfet_01v8_UCB5V5  sky130_fd_pr__pfet_01v8_UCB5V5_0
+timestamp 1753036827
+transform 1 0 125 0 1 1118
+box -109 -262 109 262
+<< labels >>
+rlabel metal1 106 1538 124 1556 1 VDPWR
+port 1 n
+rlabel metal1 272 848 288 866 3 Vout
+port 2 e
+rlabel metal1 -36 -84 -22 -70 7 VGND
+port 4 w
+rlabel metal1 -36 854 -28 860 7 Vin
+port 3 w
+<< end >>
