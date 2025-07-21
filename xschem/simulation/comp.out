@@ -28,22 +28,24 @@ Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_UCB5V5 in circuit inverter_p2_n7 (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_R8AVTM in circuit inverter_p2_n7 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_TH65V5 in circuit inverter_p1_n15 (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_3LPVTD in circuit inverter_p1_n15 (0)(2 instances)
 
-Class inverter_p2_n7 (0):  Merged 1 parallel devices.
+Class inverter_p1_n15 (0):  Merged 3 parallel devices.
 Subcircuit summary:
-Circuit 1: inverter_p2_n7                  |Circuit 2: inverter_p2_n7                  
+Circuit 1: inverter_p1_n15                 |Circuit 2: inverter_p1_n15                 
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
-sky130_fd_pr__nfet_01v8 (2->1)             |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (4->1)             |sky130_fd_pr__nfet_01v8 (1)                
 Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 4                          |Number of nets: 4                          
 ---------------------------------------------------------------------------------------
-Netlists match uniquely.
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8_3LPVTD_0/sky130_fd_pr__nfet_01v8:0 vs. sky130_fd_pr__nfet_01v8:M1:
+ w circuit1: 30   circuit2: 15   (delta=66.7%, cutoff=1%)
 
 Subcircuit pins:
-Circuit 1: inverter_p2_n7                  |Circuit 2: inverter_p2_n7                  
+Circuit 1: inverter_p1_n15                 |Circuit 2: inverter_p1_n15                 
 -------------------------------------------|-------------------------------------------
 Vout                                       |Vout                                       
 Vin                                        |Vin                                        
@@ -51,7 +53,10 @@ VGND                                       |VGND
 VDPWR                                      |VDPWR                                      
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes inverter_p2_n7 and inverter_p2_n7 are equivalent.
+Device classes inverter_p1_n15 and inverter_p1_n15 are equivalent.
 
 Final result: Circuits match uniquely.
-.
+Property errors were found.
+
+The following cells had property errors:
+ inverter_p1_n15

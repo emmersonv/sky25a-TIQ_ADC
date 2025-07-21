@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-0.045295665
-x2=1.7547048
+x1=-0.13529569
+x2=1.6647048
 divx=5
 subdivx=1
 dataset=-1
@@ -53,7 +53,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} -20 -120 0 0 {name=M2
-W=6
+W=10
 L=0.15
 nf=1
 mult=1
@@ -90,7 +90,7 @@ value="
     alterparam W = $&w_act
     reset
     save all
-    save @m.xm2.msky130_fd_pr__pfet_01v8[W] 
+    save @m.xm1.msky130_fd_pr__nfet_01v8[W] 
     run
     remzerovec
     write inverter_sweep.raw

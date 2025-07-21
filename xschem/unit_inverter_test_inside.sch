@@ -22,7 +22,7 @@ N 60 -230 70 -230 {lab=GND}
 N 70 -230 70 -210 {lab=GND}
 N 100 -50 580 -50 {lab=Vout}
 C {sky130_fd_pr/nfet_01v8.sym} -20 20 0 0 {name=M1
-W=7
+W=14
 L=0.15
 nf=2
 mult=1
@@ -36,7 +36,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} -20 -120 0 0 {name=M2
-W=2
+W=1
 L=0.15
 nf=1
 mult=1
