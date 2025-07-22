@@ -1,0 +1,97 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1753145540
+<< nwell >>
+rect -36 2080 286 2308
+rect 0 2072 250 2080
+rect 12 2022 46 2072
+rect 204 2022 238 2072
+<< psubdiff >>
+rect -36 2 286 34
+rect -36 -134 34 2
+rect 216 -134 286 2
+rect -36 -166 286 -134
+<< nsubdiff >>
+rect 0 2240 250 2272
+rect 0 2104 34 2240
+rect 216 2104 250 2240
+rect 0 2072 250 2104
+<< psubdiffcont >>
+rect 34 -134 216 2
+<< nsubdiffcont >>
+rect 34 2104 216 2240
+<< poly >>
+rect -80 976 -14 992
+rect -80 942 -64 976
+rect -30 956 -14 976
+rect 62 956 188 962
+rect -30 944 188 956
+rect -30 942 62 944
+rect -80 926 62 942
+<< polycont >>
+rect -64 942 -30 976
+<< locali >>
+rect 10 2240 240 2258
+rect 10 2104 34 2240
+rect 216 2104 240 2240
+rect 10 2086 240 2104
+rect 12 2022 46 2086
+rect 204 2022 238 2086
+rect -80 976 -14 992
+rect -80 942 -64 976
+rect -30 942 -14 976
+rect -80 926 -14 942
+rect 108 966 142 1014
+rect 264 976 330 992
+rect 264 966 280 976
+rect 108 942 280 966
+rect 314 942 330 976
+rect 108 926 330 942
+rect 108 892 142 926
+rect 12 18 46 84
+rect 204 18 238 84
+rect 12 2 238 18
+rect 12 -134 34 2
+rect 216 -134 238 2
+rect 12 -150 238 -134
+<< viali >>
+rect 34 2104 216 2240
+rect -64 942 -30 976
+rect 280 942 314 976
+rect 34 -134 216 2
+<< metal1 >>
+rect 10 2240 240 2258
+rect 10 2104 34 2240
+rect 216 2104 240 2240
+rect 10 2086 240 2104
+rect -80 976 -14 992
+rect -80 942 -64 976
+rect -30 942 -14 976
+rect -80 926 -14 942
+rect 264 976 330 992
+rect 264 942 280 976
+rect 314 942 330 976
+rect 264 926 330 942
+rect 12 2 238 18
+rect 12 -134 34 2
+rect 216 -134 238 2
+rect 12 -150 238 -134
+use sky130_fd_pr__nfet_01v8_PCU47U  sky130_fd_pr__nfet_01v8_PCU47U_0
+timestamp 1753144617
+transform 1 0 125 0 1 488
+box -125 -426 125 456
+use sky130_fd_pr__pfet_01v8_7HLYR5  sky130_fd_pr__pfet_01v8_7HLYR5_0
+timestamp 1753144617
+transform 1 0 125 0 1 1518
+box -161 -562 161 562
+<< labels >>
+rlabel metal1 116 2240 130 2258 1 VDPWR
+port 1 n
+rlabel metal1 314 962 330 968 3 Vout
+port 2 e
+rlabel metal1 -80 952 -64 958 7 Vin
+port 3 w
+rlabel metal1 118 -150 134 -134 5 VGND
+port 4 s
+<< end >>
