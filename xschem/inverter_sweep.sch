@@ -39,7 +39,7 @@ N -0 -230 0 -190 {lab=#net1}
 N 60 -230 70 -230 {lab=GND}
 N 70 -230 70 -210 {lab=GND}
 C {sky130_fd_pr/nfet_01v8.sym} -20 20 0 0 {name=M1
-W=W
+W=1
 L=0.15
 nf=1
 mult=1
@@ -53,7 +53,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} -20 -120 0 0 {name=M2
-W=10
+W=W
 L=0.15
 nf=1
 mult=1
@@ -82,15 +82,15 @@ value="
 .options savecurrents
 .dc Vin 0 1.8 0.01
 .control
-  let start_w = 1
-  let stop_w = 20
+  let start_w = 10
+  let stop_w = 25
   let delta_w = 1
   let w_act = start_w
   while w_act le stop_w
     alterparam W = $&w_act
     reset
     save all
-    save @m.xm1.msky130_fd_pr__nfet_01v8[W] 
+    save @m.xm2.msky130_fd_pr__pfet_01v8[W] 
     run
     remzerovec
     write inverter_sweep.raw
