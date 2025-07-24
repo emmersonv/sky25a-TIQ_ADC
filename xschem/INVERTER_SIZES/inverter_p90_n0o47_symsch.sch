@@ -12,4 +12,4 @@ C {opin.sym} 110 0 0 0 {name=p5 lab=Vout}
 C {ipin.sym} -90 0 0 0 {name=p6 lab=Vin}
 C {iopin.sym} 0 -80 0 0 {name=p7 lab=VDPWR}
 C {iopin.sym} 0 60 0 0 {name=p8 lab=VGND}
-C {/foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p4_n10.sym} 0 0 0 0 {name=x1}
+C {/foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p90_n0o47.sym} 0 0 0 0 {name=x1}

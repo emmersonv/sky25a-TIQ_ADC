@@ -28,4 +28,4 @@ C {code_shown.sym} 210 -40 0 0 {name=s1 only_toplevel=false value=
 .endc
 "
 }
-C {/foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p44_n0o5.sym} 0 0 0 0 {name=x1}
+C {/foss/designs/analog-circuit-design/sky25a-TIQ_ADC/xschem/INVERTER_SIZES/inverter_p0o5_n44.sym} 0 0 0 0 {name=x1}

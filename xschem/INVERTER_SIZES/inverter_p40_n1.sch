@@ -21,8 +21,13 @@ N 10 -30 490 -30 {lab=Vout}
 N -90 -230 -90 -210 {lab=VDPWR}
 N 70 210 100 210 {lab=VGND}
 N -90 140 -90 170 {lab=VGND}
+N 100 -130 100 -100 {lab=VDPWR}
+N 100 -70 100 -30 {lab=Vout}
+N 100 -170 100 -130 {lab=VDPWR}
+N -90 -170 100 -170 {lab=VDPWR}
+N 40 -100 60 -100 {lab=Vin}
 C {sky130_fd_pr/nfet_01v8.sym} -110 40 0 0 {name=M1
-W=3
+W=1
 L=0.15
 nf=1
 mult=1
@@ -36,7 +41,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} -110 -100 0 0 {name=M2
-W=12
+W=20
 L=0.15
 nf=2
 mult=1
@@ -57,3 +62,18 @@ C {iopin.sym} -90 -230 0 0 {name=p7 lab=VDPWR}
 C {iopin.sym} 100 210 0 0 {name=p8 lab=VGND}
 C {lab_wire.sym} 70 210 0 0 {name=p9 sig_type=std_logic lab=VGND}
 C {lab_wire.sym} -90 170 0 0 {name=p12 sig_type=std_logic lab=VGND}
+C {sky130_fd_pr/pfet_01v8.sym} 80 -100 0 0 {name=M3
+W=20
+L=0.15
+nf=2
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {lab_wire.sym} 40 -100 0 0 {name=p3 sig_type=std_logic lab=Vin}
