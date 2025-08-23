@@ -1,57 +1,1279 @@
 
-Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
-
-Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
-Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_PCU47U in circuit inverter_p10_n8 (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_7HLYR5 in circuit inverter_p10_n8 (0)(1 instance)
-
-Class inverter_p10_n8 (0):  Merged 2 parallel devices.
 Subcircuit summary:
-Circuit 1: inverter_p10_n8                 |Circuit 2: inverter_p10_n8                 
+Circuit 1: full_tiq_adc_3                  |Circuit 2: full_tiq_adc_3                  
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (2->1)             |sky130_fd_pr__nfet_01v8 (1)                
-sky130_fd_pr__pfet_01v8 (2->1)             |sky130_fd_pr__pfet_01v8 (1)                
-Number of devices: 2                       |Number of devices: 2                       
-Number of nets: 4                          |Number of nets: 4                          
+gain_stage (7)                             |gain_stage (7)                             
+tiq_adc_7 (1)                              |tiq_adc_7 (1)                              
+sky130_fd_pr__pfet_01v8_hvt (154->63)      |(no matching element)                      
+sky130_fd_pr__nfet_01v8 (154->66)          |(no matching element)                      
+(no matching element)                      |encoderr (1)                               
+Number of devices: 137 **Mismatch**        |Number of devices: 9 **Mismatch**          
+Number of nets: 81 **Mismatch**            |Number of nets: 20 **Mismatch**            
 ---------------------------------------------------------------------------------------
-Netlists match uniquely.
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: full_tiq_adc_3                  |Circuit 2: full_tiq_adc_3                  
+
+---------------------------------------------------------------------------------------
+Net: Vin                                   |Net: Vin                                   
+  tiq_adc_7/m1_1632_1262# = 1              |  tiq_adc_7/Vin = 1                        
+                                           |                                           
+Net: o0                                    |Net: o0                                    
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  encoderr/4 = 1                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: o1                                    |Net: o1                                    
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  encoderr/5 = 1                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: o2                                    |Net: o2                                    
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  encoderr/6 = 1                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: encoder_0/t1                          |Net: net1                                  
+  gain_stage/out = 1                       |  gain_stage/out = 1                       
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  encoderr/7 = 1                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: encoder_0/t2                          |Net: net2                                  
+  gain_stage/out = 1                       |  gain_stage/out = 1                       
+  sky130_fd_pr__nfet_01v8/2 = 1            |  encoderr/8 = 1                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+                                           |                                           
+Net: encoder_0/t3                          |Net: net3                                  
+  gain_stage/out = 1                       |  gain_stage/out = 1                       
+  sky130_fd_pr__nfet_01v8/2 = 1            |  encoderr/9 = 1                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+                                           |                                           
+Net: encoder_0/t4                          |Net: net4                                  
+  gain_stage/out = 1                       |  gain_stage/out = 1                       
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  encoderr/10 = 1                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: encoder_0/t5                          |Net: net5                                  
+  gain_stage/out = 1                       |  gain_stage/out = 1                       
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  encoderr/11 = 1                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: encoder_0/t6                          |Net: net6                                  
+  gain_stage/out = 1                       |  gain_stage/out = 1                       
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  encoderr/12 = 1                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a21o_1:_1 |Net: net7                                  
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 3    |  gain_stage/out = 1                       
+                                           |  encoderr/13 = 1                          
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a21o_2:_1 |Net: boosted_tiq_adc_7_xschem:1/net1       
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 3    |  tiq_adc_7/t0 = 1                         
+                                           |  gain_stage/in = 1                        
+                                           |                                           
+Net: VGND                                  |Net: boosted_tiq_adc_7_xschem:1/net2       
+  gain_stage/VGND = 7                      |  tiq_adc_7/t1 = 1                         
+  tiq_adc_7/inverter_p7_n10_0/sky130_fd_pr |  gain_stage/in = 1                        
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 50       |                                           
+  sky130_fd_pr__nfet_01v8/4 = 66           |                                           
+                                           |                                           
+Net: VDPWR                                 |Net: boosted_tiq_adc_7_xschem:1/net3       
+  gain_stage/VDPWR = 7                     |  tiq_adc_7/t2 = 1                         
+  tiq_adc_7/w_3894_3016# = 1               |  gain_stage/in = 1                        
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 53   |                                           
+  sky130_fd_pr__pfet_01v8_hvt/4 = 63       |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: encoder_0/t0                          |Net: boosted_tiq_adc_7_xschem:1/net4       
+  gain_stage/out = 1                       |  tiq_adc_7/t3 = 1                         
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |  gain_stage/in = 1                        
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /boosted_tiq_adc_7_0/gain_stage_7_0/g |Net: boosted_tiq_adc_7_xschem:1/net5       
+  gain_stage/in = 1                        |  tiq_adc_7/t4 = 1                         
+  tiq_adc_7/m1_1632_2126# = 1              |  gain_stage/in = 1                        
+                                           |                                           
+Net: /boosted_tiq_adc_7_0/gain_stage_7_0/g |Net: boosted_tiq_adc_7_xschem:1/net6       
+  gain_stage/in = 1                        |  tiq_adc_7/t5 = 1                         
+  tiq_adc_7/m1_1632_3626# = 1              |  gain_stage/in = 1                        
+                                           |                                           
+Net: /boosted_tiq_adc_7_0/gain_stage_7_0/g |Net: boosted_tiq_adc_7_xschem:1/net7       
+  gain_stage/in = 1                        |  tiq_adc_7/t6 = 1                         
+  tiq_adc_7/m1_1632_2570# = 1              |  gain_stage/in = 1                        
+                                           |                                           
+Net: /boosted_tiq_adc_7_0/gain_stage_7_0/g |(no matching net)                          
+  gain_stage/in = 1                        |                                           
+  tiq_adc_7/m1_1634_6# = 1                 |                                           
+                                           |                                           
+Net: /boosted_tiq_adc_7_0/gain_stage_7_0/g |(no matching net)                          
+  gain_stage/in = 1                        |                                           
+  tiq_adc_7/m1_1632_4234# = 1              |                                           
+                                           |                                           
+Net: /boosted_tiq_adc_7_0/gain_stage_7_0/g |(no matching net)                          
+  gain_stage/in = 1                        |                                           
+  tiq_adc_7/m1_1632_1362# = 1              |                                           
+                                           |                                           
+Net: /boosted_tiq_adc_7_0/gain_stage_7_0/g |(no matching net)                          
+  gain_stage/in = 1                        |                                           
+  tiq_adc_7/m1_1632_3018# = 1              |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__and3_1:_0 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__and3_1:_0 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a32o_4:_2 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a32o_4:_2 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a21o_1:_1 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a21o_2:_1 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a31o_4:_1 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a31o_4:_1 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a31o_4:_1 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a31o_4:_1 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__and4_1:_1 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__and4_1:_1 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__and4_1:_1 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__and3_1:_1 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__and3_1:_1 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__and2_1:_1 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a32o_4:_2 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__nor2_1:_1 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__or2_1:_17 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__nor4_1:_1 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__nor4_1:_1 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__nor2_1:_1 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__nor4_1:_1 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |                                           
+                                           |                                           
+Net: /encoder_0/_14_/A3                    |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
+                                           |                                           
+Net: /encoder_0/_18_/Y                     |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a21o_1:_1 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__or2_1:_17 |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a21o_2:_1 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a32o_4:_2 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 5    |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__and2_1:_1 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /encoder_0/_10_/A                     |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/2 = 4        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 5            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /encoder_0/_18_/A                     |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 5            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 4        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /encoder_0/_18_/B                     |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/2 = 3        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 3            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /encoder_0/_11_/C                     |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/2 = 3        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 3            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /encoder_0/_13_/C                     |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 3            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 3        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /encoder_0/_16_/A                     |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 3        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 3            |                                           
+                                           |                                           
+Net: /encoder_0/_09_/X                     |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+                                           |                                           
+Net: /encoder_0/_17_/X                     |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /encoder_0/_19_/X                     |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /encoder_0/_17_/B                     |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__clkbuf_1: |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__clkbuf_1: |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__buf_1:inp |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__buf_1:inp |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__buf_1:inp |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__buf_1:inp |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__clkbuf_1: |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__buf_1:inp |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a31o_4:_1 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 4    |                                           
+                                           |                                           
+Net: /encoder_0/_13_/B                     |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 2        |                                           
+                                           |                                           
+Net: /encoder_0/_11_/X                     |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 2        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__and3_1:_0 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 3    |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__and3_1:_1 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 3    |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a32o_4:_2 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 2    |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__a31o_4:_1 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |                                           
+                                           |                                           
+Net: /encoder_0/_17_/A                     |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 2        |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+                                           |                                           
+Net: /encoder_0/sky130_fd_sc_hd__and4_1:_1 |(no matching net)                          
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 4    |                                           
+  sky130_fd_pr__pfet_01v8_hvt/2 = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /encoder_0/_16_/B                     |Net: VDPWR                                 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  tiq_adc_7/VDPWR = 1                      
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |  gain_stage/VDPWR = 7                     
+  sky130_fd_pr__pfet_01v8_hvt/2 = 4        |  encoderr/2 = 1                           
+  sky130_fd_pr__nfet_01v8/2 = 4            |  encoderr/3 = 1                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /encoder_0/_13_/Y                     |Net: VGND                                  
+  sky130_fd_pr__nfet_01v8/2 = 2            |  tiq_adc_7/VGND = 1                       
+  sky130_fd_pr__pfet_01v8_hvt/2 = 2        |  gain_stage/VGND = 7                      
+  sky130_fd_pr__nfet_01v8/(1|3) = 4        |  encoderr/1 = 1                           
+  sky130_fd_pr__pfet_01v8_hvt/(1|3) = 1    |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: full_tiq_adc_3                  |Circuit 2: full_tiq_adc_3                  
+
+---------------------------------------------------------------------------------------
+Instance: encoder_0/sky130_fd_sc_hd__decap |Instance: encoderr:2                       
+  (1,3) = (125,125)                        |  1 = 9                                    
+  2 = 125                                  |  2 = 10                                   
+  4 = 125                                  |  3 = 10                                   
+                                           |  4 = 1                                    
+                                           |  5 = 1                                    
+                                           |  6 = 1                                    
+                                           |  7 = 2                                    
+                                           |  8 = 2                                    
+                                           |  9 = 2                                    
+                                           |  10 = 2                                   
+                                           |  11 = 2                                   
+                                           |  12 = 2                                   
+                                           |  13 = 2                                   
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__clkbu |(no matching instance)                     
+  (1,3) = (125,5)                          |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (125,6)                          |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (125,6)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (125,6)                          |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 3                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,11)                         |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a32o_ |(no matching instance)                     
+  (1,3) = (125,5)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a32o_ |(no matching instance)                     
+  (1,3) = (125,5)                          |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a32o_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a32o_ |(no matching instance)                     
+  (1,3) = (6,5)                            |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a32o_ |(no matching instance)                     
+  (1,3) = (125,5)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 3                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,11)                         |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__clkbu |(no matching instance)                     
+  (1,3) = (125,8)                          |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__clkbu |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 3                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__clkbu |(no matching instance)                     
+  (1,3) = (125,6)                          |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__clkbu |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 3                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 3                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,8)                          |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 3                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 3                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,8)                          |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (5,3)                            |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 5                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (125,3)                          |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (125,3)                          |                                           
+  2 = 5                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor2_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor2_ |(no matching instance)                     
+  (1,3) = (5,2)                            |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__or2_1 |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 7                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__or2_1 |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 5                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__or2_1 |(no matching instance)                     
+  (1,3) = (5,2)                            |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and2_ |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 5                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and2_ |(no matching instance)                     
+  (1,3) = (125,5)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 5                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (125,3)                          |                                           
+  2 = 7                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (5,3)                            |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (125,3)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a31o_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a31o_ |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a31o_ |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 5                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a31o_ |(no matching instance)                     
+  (1,3) = (6,4)                            |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a31o_ |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor4_ |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor4_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor4_ |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor2_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (125,6)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (125,6)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (125,6)                          |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and4_ |(no matching instance)                     
+  (1,3) = (125,7)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and4_ |(no matching instance)                     
+  (1,3) = (125,8)                          |                                           
+  2 = 7                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and4_ |(no matching instance)                     
+  (1,3) = (125,7)                          |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and4_ |(no matching instance)                     
+  (1,3) = (125,7)                          |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and4_ |(no matching instance)                     
+  (1,3) = (125,7)                          |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__clkbu |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 9                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a32o_ |(no matching instance)                     
+  (1,3) = (6,5)                            |                                           
+  2 = 9                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,10)                         |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and2_ |(no matching instance)                     
+  (1,3) = (125,5)                          |                                           
+  2 = 10                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor2_ |(no matching instance)                     
+  (1,3) = (7,2)                            |                                           
+  2 = 10                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (125,6)                          |                                           
+  2 = 10                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor4_ |(no matching instance)                     
+  (1,3) = (9,2)                            |                                           
+  2 = 10                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__decap |(no matching instance)                     
+  (1,3) = (125,125)                        |                                           
+  2 = 125                                  |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__clkbu |(no matching instance)                     
+  (1,3) = (125,5)                          |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (6,2)                            |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,11)                         |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 3                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a32o_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a32o_ |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a32o_ |(no matching instance)                     
+  (1,3) = (6,2)                            |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a32o_ |(no matching instance)                     
+  (1,3) = (6,2)                            |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a32o_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,11)                         |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 3                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__clkbu |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 3                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__clkbu |(no matching instance)                     
+  (1,3) = (125,8)                          |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__clkbu |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 3                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__clkbu |(no matching instance)                     
+  (1,3) = (125,6)                          |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,8)                          |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 3                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 3                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,8)                          |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 3                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (125,5)                          |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 5                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 5                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (5,2)                            |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor2_ |(no matching instance)                     
+  (1,3) = (125,5)                          |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor2_ |(no matching instance)                     
+  (1,3) = (125,5)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__or2_1 |(no matching instance)                     
+  (1,3) = (125,5)                          |                                           
+  2 = 7                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__or2_1 |(no matching instance)                     
+  (1,3) = (125,5)                          |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__or2_1 |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 5                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and2_ |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 5                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and2_ |(no matching instance)                     
+  (1,3) = (5,2)                            |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 5                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (125,5)                          |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (5,2)                            |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a21o_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 7                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a31o_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a31o_ |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a31o_ |(no matching instance)                     
+  (1,3) = (6,2)                            |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a31o_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 5                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a31o_ |(no matching instance)                     
+  (1,3) = (6,2)                            |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a31o_ |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a31o_ |(no matching instance)                     
+  (1,3) = (125,6)                          |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a31o_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 5                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor2_ |(no matching instance)                     
+  (1,3) = (125,7)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (125,6)                          |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (6,2)                            |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and4_ |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and4_ |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and4_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and4_ |(no matching instance)                     
+  (1,3) = (125,8)                          |                                           
+  2 = 7                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and4_ |(no matching instance)                     
+  (1,3) = (7,2)                            |                                           
+  2 = 11                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__clkbu |(no matching instance)                     
+  (1,3) = (125,4)                          |                                           
+  2 = 9                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__a32o_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 9                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__buf_1 |(no matching instance)                     
+  (1,3) = (125,10)                         |                                           
+  2 = 4                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and2_ |(no matching instance)                     
+  (1,3) = (125,2)                          |                                           
+  2 = 10                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor2_ |(no matching instance)                     
+  (1,3) = (125,7)                          |                                           
+  2 = 10                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__and3_ |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 10                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor4_ |(no matching instance)                     
+  (1,3) = (125,9)                          |                                           
+  2 = 6                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor4_ |(no matching instance)                     
+  (1,3) = (125,9)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor4_ |(no matching instance)                     
+  (1,3) = (125,9)                          |                                           
+  2 = 8                                    |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: encoder_0/sky130_fd_sc_hd__nor4_ |(no matching instance)                     
+  (1,3) = (125,9)                          |                                           
+  2 = 10                                   |                                           
+  4 = 125                                  |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: boosted_tiq_adc_7_0//tiq_adc_7_0 |Instance: boosted_tiq_adc_7_xschem:1/tiq_a 
+  m1_1632_3018# = 2                        |  t2 = 2                                   
+  m1_1632_2570# = 2                        |  t3 = 2                                   
+  m1_1632_1262# = 1                        |  Vin = 1                                  
+  m1_1632_3626# = 2                        |  t1 = 2                                   
+  w_3894_3016# = 125                       |  VDPWR = 10                               
+  m1_1632_4234# = 2                        |  t0 = 2                                   
+  m1_1634_6# = 2                           |  t6 = 2                                   
+  m1_1632_2126# = 2                        |  t4 = 2                                   
+  inverter_p7_n10_0/sky130_fd_pr__pfet_01v |  VGND = 9                                 
+  m1_1632_1362# = 2                        |  t5 = 2                                   
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: boosted_tiq_adc_7_0//gain_stage_ |Instance: boosted_tiq_adc_7_xschem:1/gain_ 
+  in = 2                                   |  in = 2                                   
+  out = 3                                  |  out = 2                                  
+  VDPWR = 125                              |  VDPWR = 10                               
+  VGND = 125                               |  VGND = 9                                 
+                                           |                                           
+Instance: boosted_tiq_adc_7_0//gain_stage_ |Instance: boosted_tiq_adc_7_xschem:1/gain_ 
+  in = 2                                   |  in = 2                                   
+  out = 3                                  |  out = 2                                  
+  VDPWR = 125                              |  VDPWR = 10                               
+  VGND = 125                               |  VGND = 9                                 
+                                           |                                           
+Instance: boosted_tiq_adc_7_0//gain_stage_ |Instance: boosted_tiq_adc_7_xschem:1/gain_ 
+  in = 2                                   |  in = 2                                   
+  out = 3                                  |  out = 2                                  
+  VDPWR = 125                              |  VDPWR = 10                               
+  VGND = 125                               |  VGND = 9                                 
+                                           |                                           
+Instance: boosted_tiq_adc_7_0//gain_stage_ |Instance: boosted_tiq_adc_7_xschem:1/gain_ 
+  in = 2                                   |  in = 2                                   
+  out = 3                                  |  out = 2                                  
+  VDPWR = 125                              |  VDPWR = 10                               
+  VGND = 125                               |  VGND = 9                                 
+                                           |                                           
+Instance: boosted_tiq_adc_7_0//gain_stage_ |Instance: boosted_tiq_adc_7_xschem:1/gain_ 
+  in = 2                                   |  in = 2                                   
+  out = 3                                  |  out = 2                                  
+  VDPWR = 125                              |  VDPWR = 10                               
+  VGND = 125                               |  VGND = 9                                 
+                                           |                                           
+Instance: boosted_tiq_adc_7_0//gain_stage_ |Instance: boosted_tiq_adc_7_xschem:1/gain_ 
+  in = 2                                   |  in = 2                                   
+  out = 3                                  |  out = 2                                  
+  VDPWR = 125                              |  VDPWR = 10                               
+  VGND = 125                               |  VGND = 9                                 
+                                           |                                           
+Instance: boosted_tiq_adc_7_0//gain_stage_ |Instance: boosted_tiq_adc_7_xschem:1/gain_ 
+  in = 2                                   |  in = 2                                   
+  out = 3                                  |  out = 2                                  
+  VDPWR = 125                              |  VDPWR = 10                               
+  VGND = 125                               |  VGND = 9                                 
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
 
 Subcircuit pins:
-Circuit 1: inverter_p10_n8                 |Circuit 2: inverter_p10_n8                 
+Circuit 1: full_tiq_adc_3                  |Circuit 2: full_tiq_adc_3                  
 -------------------------------------------|-------------------------------------------
-Vout                                       |Vout                                       
-Vin                                        |Vin                                        
-VGND                                       |VGND                                       
-VDPWR                                      |VDPWR                                      
+VDPWR                                      |Vin **Mismatch**                           
+VGND                                       |o0 **Mismatch**                            
+Vin                                        |o1 **Mismatch**                            
+o0                                         |(no pin, node is boosted_tiq_adc_7_xschem: 
+o1                                         |(no pin, node is boosted_tiq_adc_7_xschem: 
+o2                                         |(no pin, node is boosted_tiq_adc_7_xschem: 
+proxyo2                                    |proxyo2                                    
+proxyo2                                    |proxyo2                                    
+proxyo2                                    |proxyo2                                    
+proxyo2                                    |proxyo2                                    
+proxyo2                                    |proxyo2                                    
+proxyo2                                    |proxyo2                                    
+(no matching pin)                          |proxyo0                                    
+(no matching pin)                          |proxyo1                                    
+(no matching pin)                          |proxyo2                                    
+(no pin, node is /encoder_0/_13_/Y)        |VGND                                       
+(no pin, node is /encoder_0/_16_/B)        |VDPWR                                      
+(no pin, node is /encoder_0/sky130_fd_sc_h |o2                                         
+proxyVGND                                  |(no matching pin)                          
+proxyVDPWR                                 |(no matching pin)                          
 ---------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes inverter_p10_n8 and inverter_p10_n8 are equivalent.
+Error:  Connected pin proxyo0 (node -2) did not get ordered!
+Error:  Connected pin proxyo1 (node -2) did not get ordered!
+Error:  Connected pin proxyo2 (node -2) did not get ordered!
+Ports of full_tiq_adc_3 are unordered.  Ordering will be arbitrary.
+Cell pin lists for full_tiq_adc_3 and full_tiq_adc_3 altered to match.
+Device classes full_tiq_adc_3 and full_tiq_adc_3 are equivalent.
 
-Final result: Circuits match uniquely.
-.
+Final result: Top level cell failed pin matching.

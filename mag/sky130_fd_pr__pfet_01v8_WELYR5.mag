@@ -1,0 +1,61 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1753845410
+<< nwell >>
+rect -161 -1062 161 1062
+<< pmos >>
+rect -63 -1000 -33 1000
+rect 33 -1000 63 1000
+<< pdiff >>
+rect -125 988 -63 1000
+rect -125 -988 -113 988
+rect -79 -988 -63 988
+rect -125 -1000 -63 -988
+rect -33 988 33 1000
+rect -33 -988 -17 988
+rect 17 -988 33 988
+rect -33 -1000 33 -988
+rect 63 988 125 1000
+rect 63 -988 79 988
+rect 113 -988 125 988
+rect 63 -1000 125 -988
+<< pdiffc >>
+rect -113 -988 -79 988
+rect -17 -988 17 988
+rect 79 -988 113 988
+<< poly >>
+rect -63 1000 -33 1026
+rect 33 1000 63 1026
+rect -63 -1026 -33 -1000
+rect 33 -1026 63 -1000
+rect -63 -1056 63 -1026
+<< locali >>
+rect -113 988 -79 1004
+rect -113 -1004 -79 -988
+rect -17 988 17 1004
+rect -17 -1004 17 -988
+rect 79 988 113 1004
+rect 79 -1004 113 -988
+<< viali >>
+rect -113 -988 -79 988
+rect -17 -988 17 988
+rect 79 -988 113 988
+<< metal1 >>
+rect -119 988 -73 1000
+rect -119 -988 -113 988
+rect -79 -988 -73 988
+rect -119 -1000 -73 -988
+rect -23 988 23 1000
+rect -23 -988 -17 988
+rect 17 -988 23 988
+rect -23 -1000 23 -988
+rect 73 988 119 1000
+rect 73 -988 79 988
+rect 113 -988 119 988
+rect 73 -1000 119 -988
+<< properties >>
+string gencell sky130_fd_pr__pfet_01v8
+string library sky130
+string parameters w 10 l 0.15 m 1 nf 2 diffcov 100 polycov 100 guard 0 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 0 botc 0 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 class mosfet compatible {sky130_fd_pr__pfet_01v8  sky130_fd_pr__pfet_01v8_lvt sky130_fd_pr__pfet_01v8_hvt  sky130_fd_pr__pfet_g5v0d10v5} full_metal 0 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0
+<< end >>
