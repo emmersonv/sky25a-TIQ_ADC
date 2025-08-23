@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1755911681
+timestamp 1755919380
 << locali >>
 rect 208 6320 274 6336
 rect 208 6284 224 6320
@@ -456,11 +456,11 @@ rect -2968 18 -2952 82
 rect -2888 18 -2880 82
 rect -3200 16 -2880 18
 use boosted_tiq_adc_7  boosted_tiq_adc_7_0
-timestamp 1755911681
+timestamp 1755919380
 transform 1 0 260 0 1 0
 box -260 0 4876 6864
 use encoder  encoder_0
-timestamp 1755737846
+timestamp 1755919380
 transform 1 0 -7516 0 1 -76
 box 0 0 7471 6928
 << labels >>

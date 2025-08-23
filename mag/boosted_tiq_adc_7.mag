@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1755911681
+timestamp 1755919380
 << polycont >>
 rect 370 3143 387 3161
 rect 370 2651 387 2669
@@ -205,11 +205,11 @@ rect 362 186 365 213
 rect 392 186 1287 213
 rect 362 182 1287 186
 use gain_stage_7  gain_stage_7_0
-timestamp 1755723063
+timestamp 1755919380
 transform -1 0 395 0 1 2953
 box -1 -2953 395 479
 use tiq_adc_7  tiq_adc_7_0
-timestamp 1755723063
+timestamp 1755919380
 transform 1 0 440 0 1 380
 box 0 0 1998 2561
 << labels >>

@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1754266322
+timestamp 1755919380
 << nwell >>
 rect 131 461 153 479
 rect 262 461 284 479
@@ -18,15 +18,15 @@ rect 385 194 393 201
 rect 185 446 202 454
 rect 186 8 203 16
 use inverter_p1_n0o42  inverter_p1_n0o42_0
-timestamp 1754263527
+timestamp 1755919380
 transform 1 0 40 0 1 114
 box -40 -114 91 365
 use inverter_p1_n0o42  inverter_p1_n0o42_1
-timestamp 1754263527
+timestamp 1755919380
 transform 1 0 171 0 1 114
 box -40 -114 91 365
 use inverter_p1_n0o42  inverter_p1_n0o42_2
-timestamp 1754263527
+timestamp 1755919380
 transform 1 0 302 0 1 114
 box -40 -114 91 365
 << labels >>

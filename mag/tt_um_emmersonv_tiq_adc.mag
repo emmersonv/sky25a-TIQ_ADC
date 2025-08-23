@@ -1,6 +1,10 @@
 magic
 tech sky130A
-timestamp 1755913905
+timestamp 1755919380
+<< nwell >>
+rect 15170 1419 15270 3345
+<< nsubdiff >>
+rect 15170 1419 15270 3345
 << metal2 >>
 rect 14151 1455 14168 3337
 rect 14151 1438 14362 1455
@@ -114,7 +118,7 @@ rect 11317 0 11407 100
 rect 13249 0 13339 100
 rect 15181 0 15271 248
 use full_tiq_adc_3  full_tiq_adc_3_0
-timestamp 1755911681
+timestamp 1755919380
 transform 1 0 12720 0 1 422
 box -3758 -38 2568 3432
 << labels >>
