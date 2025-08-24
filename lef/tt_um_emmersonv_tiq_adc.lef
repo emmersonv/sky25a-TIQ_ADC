@@ -8,32 +8,24 @@ MACRO tt_um_emmersonv_tiq_adc
   ORIGIN 0.000 0.000 ;
   SIZE 161.000 BY 225.760 ;
   PIN clk
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 143.830 224.760 144.130 225.760 ;
     END
   END clk
   PIN ena
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 146.590 224.760 146.890 225.760 ;
     END
   END ena
   PIN rst_n
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 141.070 224.760 141.370 225.760 ;
     END
   END rst_n
   PIN ua[0]
-    DIRECTION INOUT ;
-    USE SIGNAL ;
     ANTENNAGATEAREA 36.968998 ;
     PORT
       LAYER met4 ;
@@ -41,320 +33,240 @@ MACRO tt_um_emmersonv_tiq_adc
     END
   END ua[0]
   PIN ua[1]
-    DIRECTION INOUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 132.490 0.000 133.390 1.000 ;
     END
   END ua[1]
   PIN ua[2]
-    DIRECTION INOUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 113.170 0.000 114.070 1.000 ;
     END
   END ua[2]
   PIN ua[3]
-    DIRECTION INOUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 93.850 0.000 94.750 1.000 ;
     END
   END ua[3]
   PIN ua[4]
-    DIRECTION INOUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 74.530 0.000 75.430 1.000 ;
     END
   END ua[4]
   PIN ua[5]
-    DIRECTION INOUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 55.210 0.000 56.110 1.000 ;
     END
   END ua[5]
   PIN ua[6]
-    DIRECTION INOUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 35.890 0.000 36.790 1.000 ;
     END
   END ua[6]
   PIN ua[7]
-    DIRECTION INOUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 16.570 0.000 17.470 1.000 ;
     END
   END ua[7]
   PIN ui_in[0]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 138.310 224.760 138.610 225.760 ;
     END
   END ui_in[0]
   PIN ui_in[1]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 135.550 224.760 135.850 225.760 ;
     END
   END ui_in[1]
   PIN ui_in[2]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 132.790 224.760 133.090 225.760 ;
     END
   END ui_in[2]
   PIN ui_in[3]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 130.030 224.760 130.330 225.760 ;
     END
   END ui_in[3]
   PIN ui_in[4]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 127.270 224.760 127.570 225.760 ;
     END
   END ui_in[4]
   PIN ui_in[5]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 124.510 224.760 124.810 225.760 ;
     END
   END ui_in[5]
   PIN ui_in[6]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 121.750 224.760 122.050 225.760 ;
     END
   END ui_in[6]
   PIN ui_in[7]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 118.990 224.760 119.290 225.760 ;
     END
   END ui_in[7]
   PIN uio_in[0]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 116.230 224.760 116.530 225.760 ;
     END
   END uio_in[0]
   PIN uio_in[1]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 113.470 224.760 113.770 225.760 ;
     END
   END uio_in[1]
   PIN uio_in[2]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 110.710 224.760 111.010 225.760 ;
     END
   END uio_in[2]
   PIN uio_in[3]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 107.950 224.760 108.250 225.760 ;
     END
   END uio_in[3]
   PIN uio_in[4]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 105.190 224.760 105.490 225.760 ;
     END
   END uio_in[4]
   PIN uio_in[5]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 102.430 224.760 102.730 225.760 ;
     END
   END uio_in[5]
   PIN uio_in[6]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 99.670 224.760 99.970 225.760 ;
     END
   END uio_in[6]
   PIN uio_in[7]
-    DIRECTION INPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 96.910 224.760 97.210 225.760 ;
     END
   END uio_in[7]
   PIN uio_oe[0]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 49.990 224.760 50.290 225.760 ;
     END
   END uio_oe[0]
   PIN uio_oe[1]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 47.230 224.760 47.530 225.760 ;
     END
   END uio_oe[1]
   PIN uio_oe[2]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 44.470 224.760 44.770 225.760 ;
     END
   END uio_oe[2]
   PIN uio_oe[3]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 41.710 224.760 42.010 225.760 ;
     END
   END uio_oe[3]
   PIN uio_oe[4]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 38.950 224.760 39.250 225.760 ;
     END
   END uio_oe[4]
   PIN uio_oe[5]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 36.190 224.760 36.490 225.760 ;
     END
   END uio_oe[5]
   PIN uio_oe[6]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 33.430 224.760 33.730 225.760 ;
     END
   END uio_oe[6]
   PIN uio_oe[7]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 30.670 224.760 30.970 225.760 ;
     END
   END uio_oe[7]
   PIN uio_out[0]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 72.070 224.760 72.370 225.760 ;
     END
   END uio_out[0]
   PIN uio_out[1]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 69.310 224.760 69.610 225.760 ;
     END
   END uio_out[1]
   PIN uio_out[2]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 66.550 224.760 66.850 225.760 ;
     END
   END uio_out[2]
   PIN uio_out[3]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 63.790 224.760 64.090 225.760 ;
     END
   END uio_out[3]
   PIN uio_out[4]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 61.030 224.760 61.330 225.760 ;
     END
   END uio_out[4]
   PIN uio_out[5]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 58.270 224.760 58.570 225.760 ;
     END
   END uio_out[5]
   PIN uio_out[6]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 55.510 224.760 55.810 225.760 ;
     END
   END uio_out[6]
   PIN uio_out[7]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 52.750 224.760 53.050 225.760 ;
     END
   END uio_out[7]
   PIN uo_out[0]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     ANTENNADIFFAREA 0.462000 ;
     PORT
       LAYER met4 ;
@@ -362,8 +274,6 @@ MACRO tt_um_emmersonv_tiq_adc
     END
   END uo_out[0]
   PIN uo_out[1]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
@@ -371,8 +281,6 @@ MACRO tt_um_emmersonv_tiq_adc
     END
   END uo_out[1]
   PIN uo_out[2]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
@@ -380,55 +288,44 @@ MACRO tt_um_emmersonv_tiq_adc
     END
   END uo_out[2]
   PIN uo_out[3]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 85.870 224.760 86.170 225.760 ;
     END
   END uo_out[3]
   PIN uo_out[4]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 83.110 224.760 83.410 225.760 ;
     END
   END uo_out[4]
   PIN uo_out[5]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 80.350 224.760 80.650 225.760 ;
     END
   END uo_out[5]
   PIN uo_out[6]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 77.590 224.760 77.890 225.760 ;
     END
   END uo_out[6]
   PIN uo_out[7]
-    DIRECTION OUTPUT ;
-    USE SIGNAL ;
     PORT
       LAYER met4 ;
         RECT 74.830 224.760 75.130 225.760 ;
     END
   END uo_out[7]
   PIN VDPWR
-    DIRECTION INOUT ;
-    USE POWER ;
+    ANTENNAGATEAREA 123.837997 ;
+    ANTENNADIFFAREA 144.727646 ;
     PORT
       LAYER met4 ;
         RECT 1.000 5.000 3.000 220.760 ;
     END
   END VDPWR
   PIN VGND
-    DIRECTION INOUT ;
     USE GROUND ;
     PORT
       LAYER met4 ;
@@ -440,6 +337,9 @@ MACRO tt_um_emmersonv_tiq_adc
         RECT 92.190 35.065 124.310 36.670 ;
         RECT 128.520 35.780 132.230 38.540 ;
       LAYER pwell ;
+        RECT 128.570 34.890 129.560 35.570 ;
+        RECT 129.880 34.890 130.870 35.570 ;
+        RECT 131.190 34.890 132.180 35.570 ;
         RECT 92.385 33.865 93.755 34.675 ;
         RECT 93.765 33.865 99.275 34.675 ;
         RECT 99.285 33.865 104.795 34.675 ;
@@ -477,10 +377,14 @@ MACRO tt_um_emmersonv_tiq_adc
         RECT 118.155 32.785 118.585 33.570 ;
         RECT 118.605 32.845 122.275 33.655 ;
         RECT 122.745 32.845 124.115 33.655 ;
+        RECT 128.390 33.620 132.580 34.880 ;
       LAYER nwell ;
         RECT 92.190 29.625 124.310 32.455 ;
         RECT 128.520 30.860 132.230 33.620 ;
       LAYER pwell ;
+        RECT 128.570 29.970 129.560 30.650 ;
+        RECT 129.880 29.970 130.870 30.650 ;
+        RECT 131.190 29.970 132.180 30.650 ;
         RECT 92.385 28.425 93.755 29.235 ;
         RECT 93.765 28.425 99.275 29.235 ;
         RECT 99.285 28.425 104.795 29.235 ;
@@ -490,9 +394,7 @@ MACRO tt_um_emmersonv_tiq_adc
         RECT 116.765 28.425 120.435 29.235 ;
         RECT 121.365 28.425 122.735 29.205 ;
         RECT 122.745 28.425 124.115 29.235 ;
-      LAYER nwell ;
-        RECT 141.180 28.980 152.880 33.630 ;
-      LAYER pwell ;
+        RECT 128.390 28.700 132.580 29.960 ;
         RECT 92.525 28.215 92.695 28.425 ;
         RECT 93.905 28.215 94.075 28.425 ;
         RECT 99.425 28.215 99.595 28.425 ;
@@ -523,8 +425,11 @@ MACRO tt_um_emmersonv_tiq_adc
       LAYER nwell ;
         RECT 92.190 24.185 124.310 27.015 ;
         RECT 128.520 25.930 132.230 28.690 ;
-        RECT 141.550 26.030 152.880 28.980 ;
       LAYER pwell ;
+        RECT 128.570 25.040 129.560 25.720 ;
+        RECT 129.880 25.040 130.870 25.720 ;
+        RECT 131.190 25.040 132.180 25.720 ;
+        RECT 128.390 24.960 132.580 25.030 ;
         RECT 92.385 22.985 93.755 23.795 ;
         RECT 93.765 22.985 99.275 23.795 ;
         RECT 99.285 22.985 104.795 23.795 ;
@@ -532,8 +437,10 @@ MACRO tt_um_emmersonv_tiq_adc
         RECT 105.725 22.985 111.235 23.795 ;
         RECT 111.245 22.985 113.995 23.795 ;
         RECT 114.705 22.985 120.895 23.895 ;
+        RECT 128.380 23.850 132.590 24.960 ;
         RECT 121.365 22.985 122.735 23.765 ;
         RECT 122.745 22.985 124.115 23.795 ;
+        RECT 128.390 23.770 132.580 23.850 ;
         RECT 92.525 22.775 92.695 22.985 ;
         RECT 93.905 22.775 94.075 22.985 ;
         RECT 99.425 22.775 99.595 22.985 ;
@@ -571,6 +478,10 @@ MACRO tt_um_emmersonv_tiq_adc
         RECT 92.190 18.745 124.310 21.575 ;
         RECT 128.520 21.010 132.230 23.770 ;
       LAYER pwell ;
+        RECT 128.570 20.120 129.560 20.800 ;
+        RECT 129.880 20.120 130.870 20.800 ;
+        RECT 131.190 20.120 132.180 20.800 ;
+        RECT 128.390 18.850 132.580 20.110 ;
         RECT 92.385 17.545 93.755 18.355 ;
         RECT 93.765 17.545 99.275 18.355 ;
         RECT 99.285 17.545 104.795 18.355 ;
@@ -612,8 +523,11 @@ MACRO tt_um_emmersonv_tiq_adc
       LAYER nwell ;
         RECT 92.190 13.305 124.310 16.135 ;
         RECT 128.520 16.090 132.230 18.850 ;
-        RECT 141.180 18.840 152.880 26.030 ;
       LAYER pwell ;
+        RECT 128.570 15.200 129.560 15.880 ;
+        RECT 129.880 15.200 130.870 15.880 ;
+        RECT 131.190 15.200 132.180 15.880 ;
+        RECT 128.390 13.930 132.580 15.190 ;
         RECT 92.385 12.105 93.755 12.915 ;
         RECT 93.765 12.105 99.275 12.915 ;
         RECT 99.285 12.105 104.795 12.915 ;
@@ -661,6 +575,10 @@ MACRO tt_um_emmersonv_tiq_adc
         RECT 128.520 11.170 132.230 13.930 ;
         RECT 92.190 7.865 124.310 10.695 ;
       LAYER pwell ;
+        RECT 128.570 10.280 129.560 10.960 ;
+        RECT 129.880 10.280 130.870 10.960 ;
+        RECT 131.190 10.280 132.180 10.960 ;
+        RECT 128.390 9.010 132.580 10.270 ;
         RECT 92.385 6.665 93.755 7.475 ;
         RECT 93.765 6.665 99.275 7.475 ;
         RECT 99.285 6.665 104.795 7.475 ;
@@ -684,7 +602,35 @@ MACRO tt_um_emmersonv_tiq_adc
         RECT 123.805 6.475 123.975 6.665 ;
       LAYER nwell ;
         RECT 128.520 6.250 132.230 9.010 ;
+      LAYER pwell ;
+        RECT 132.770 7.890 134.030 33.760 ;
+        RECT 134.040 32.070 140.970 33.580 ;
+        RECT 134.040 30.550 140.970 32.060 ;
+        RECT 134.040 29.030 140.970 30.540 ;
+        RECT 136.210 27.510 140.970 29.020 ;
+      LAYER nwell ;
+        RECT 141.180 28.980 152.880 33.630 ;
+      LAYER pwell ;
+        RECT 136.210 25.990 140.970 27.500 ;
+      LAYER nwell ;
+        RECT 141.550 26.030 152.880 28.980 ;
+      LAYER pwell ;
+        RECT 138.210 24.470 140.970 25.980 ;
+        RECT 138.210 22.950 140.970 24.460 ;
+        RECT 138.210 21.130 140.970 22.640 ;
+        RECT 139.210 19.370 140.970 20.360 ;
+      LAYER nwell ;
+        RECT 141.180 18.840 152.880 26.030 ;
+      LAYER pwell ;
+        RECT 139.650 16.350 140.910 17.340 ;
+        RECT 140.180 10.810 140.910 11.800 ;
+      LAYER nwell ;
         RECT 141.120 8.280 152.880 18.840 ;
+      LAYER pwell ;
+        RECT 128.570 5.360 129.560 6.040 ;
+        RECT 129.880 5.360 130.870 6.040 ;
+        RECT 131.190 5.360 132.180 6.040 ;
+        RECT 128.390 4.090 132.580 5.350 ;
       LAYER li1 ;
         RECT 128.520 37.430 132.450 38.290 ;
         RECT 92.380 36.395 124.120 36.565 ;

@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1755919380
+timestamp 1756008383
 << nwell >>
 rect 131 461 153 479
 rect 262 461 284 479
@@ -18,24 +18,24 @@ rect 385 194 393 201
 rect 185 446 202 454
 rect 186 8 203 16
 use inverter_p1_n0o42  inverter_p1_n0o42_0
-timestamp 1755919380
+timestamp 1756008383
 transform 1 0 40 0 1 114
-box -40 -114 91 365
+box -53 -127 104 365
 use inverter_p1_n0o42  inverter_p1_n0o42_1
-timestamp 1755919380
+timestamp 1756008383
 transform 1 0 171 0 1 114
-box -40 -114 91 365
+box -53 -127 104 365
 use inverter_p1_n0o42  inverter_p1_n0o42_2
-timestamp 1755919380
+timestamp 1756008383
 transform 1 0 302 0 1 114
-box -40 -114 91 365
+box -53 -127 104 365
 << labels >>
-rlabel locali 0 195 8 202 7 in
-port 1 w
-rlabel locali 385 194 393 201 3 out
-port 2 e
-rlabel metal1 186 8 203 16 5 VGND
-port 3 s
-rlabel metal1 185 446 202 454 1 VDPWR
-port 4 n
+rlabel locali s 0 195 8 202 4 in
+port 1 nsew
+rlabel locali s 385 194 393 201 4 out
+port 2 nsew
+rlabel metal1 s 186 8 203 16 4 VGND
+port 3 nsew
+rlabel metal1 s 185 446 202 454 4 VDPWR
+port 4 nsew
 << end >>
