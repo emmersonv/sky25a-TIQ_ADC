@@ -318,6 +318,7 @@ MACRO tt_um_emmersonv_tiq_adc
     END
   END uo_out[7]
   PIN VDPWR
+    USE POWER ;
     ANTENNAGATEAREA 123.837997 ;
     ANTENNADIFFAREA 144.727646 ;
     PORT
