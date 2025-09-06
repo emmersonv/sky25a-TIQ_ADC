@@ -3,7 +3,7 @@ project:
   title:        "3 Bit TIQ ADC"      # Project title
   author:       "Emmerson Velazquez"      # Your name
   discord:      "angelo.perez.ban"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Converts analog signal to a 3 bit digital signal"      # One line description of what your project does
+  description:  "Converts a 0V - 1.8V analog signal from analog pin 0 to a 3 bit digital signal to digital outputs 0, 1, and 2."      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
